@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login & Signup Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="form-container">
+        <!-- Login Form (Default Visible) -->
+        <div class="form" id="login-form">
+            <h1>Login</h1>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <span onclick="showSignupForm()"><a href="#">Signup here</a></span></p>
+        </div>
+
+        <!-- Signup Form (Hidden Initially) -->
+        <div class="form hidden" id="signup-form">
+            <h1>Signup</h1>
+            <input type="text" id="signup-username" placeholder="Username" required>
+            <input type="email" id="signup-email" placeholder="Email" required>
+            <input type="password" id="signup-password" placeholder="Password" required>
+            <button onclick="signup()">Signup</button>
+            <p>Already have an account? <span onclick="showLoginForm()"><a href="#">Login here</a></span></p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
