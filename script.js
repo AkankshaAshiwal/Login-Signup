@@ -12,8 +12,8 @@ function showLoginForm() {
 
 // Login function
 function login() {
-    const email = document.getElementById('login-email').value.trim();
-    const password = document.getElementById('login-password').value.trim();
+    const email = document.getElementById('login-email').value;
+    const password = document.getElementById('login-password').value;
 
     if (email && password) {
         alert("Login Successful!");
@@ -24,9 +24,9 @@ function login() {
 
 // Signup function
 function signup() {
-    const username = document.getElementById('signup-username').value.trim();
-    const email = document.getElementById('signup-email').value.trim();
-    const password = document.getElementById('signup-password').value.trim();
+    const username = document.getElementById('signup-username').value;
+    const email = document.getElementById('signup-email').value;
+    const password = document.getElementById('signup-password').value;
 
     if (username && email && password) {
         alert("Signup Successful!");
